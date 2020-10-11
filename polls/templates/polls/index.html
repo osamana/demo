@@ -1,3 +1,10 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static "polls/css/styles.css" %}">
+</head>
+<body>
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
@@ -7,3 +14,8 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+<img src="{% static "polls/img/cat.jpg" %}" alt="" width="200">
+
+
+</body>
+</html>
